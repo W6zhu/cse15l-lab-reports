@@ -1,4 +1,4 @@
-# ** New heading **
+# New heading
 
 *Hello?*
 
