@@ -12,7 +12,7 @@ _cd no arguement_
 
 _ls no arguement_
 * Working directory: Home/main
-* Output: It showed what was in the home/main which was the folder `lecture1`. No arguments here showed us what files/folders were in the current directory.
+* Output: It showed what was in the home/main which was the folder `lecture1` as expected for the list function. No arguments here showed us what files/folders were in the current directory.
 * Error?: No error was thrown as the output was as expected.
 
 _cat no arguement_
@@ -32,12 +32,12 @@ _cd directory arguement_
 
 _ls directory arguement_
 * Working directory: lecture1
-* Output: It showed what was in the `messages` directory which was the files `de.txt`, `en-us.txt`, `es-mx.txt`, and  `zh-cn.txt`. If we did no arguments in the `lecture1` directory, it would show us all the files in the `lecture1` directory which were the folder `messages` and the files `Hello.class`, `Hello.java`, and `README`. 
+* Output: It showed what was in the `messages` directory which was the files `de.txt`, `en-us.txt`, `es-mx.txt`, and  `zh-cn.txt` as expected with the list function. If we did no arguments in the `lecture1` directory, it would show us all the files in the `lecture1` directory which were the folder `messages` and the files `Hello.class`, `Hello.java`, and `README`. 
 * Error?: No error was thrown as the output was as expected.
 
 _cat directory arguement_
 * Working directory: lecture1
-* Output: The following was outputted: `cat: messages: Is a directory`, which is an error. This output was expected as we tried to concatenate/print a directory
+* Output: The following was outputted: `cat: messages: Is a directory`, which is an error. This output was expected as we tried to concatenate/print a directory.
 * Error?: Since the output threw an error, it tells us that we were trying to concatenate a directory, which isn't allowed since it can't print out what the directory is. 
 
 **Step 3:**
@@ -51,7 +51,7 @@ _cd file arguement_
 
 _ls file arguement_
 * Working directory: lecture1
-* Output: It outputted as expected as it listed the name of the file. 
+* Output: It outputted as expected as it is supposed to list the name of the file. 
 * Error?: No error was thrown as the output was as expected.
 
 _cat file arguement_
