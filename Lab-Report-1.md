@@ -9,6 +9,17 @@ _cd no arguement_
 * Output: Got as expected for CD as it's used for changing directory and we didn't change the directory. Having no arguments means that nothing is being changed here.
 * Error?: The output was not an error as we did not change the directory.
 
+_ls no arguement_
+* Working directory: Home/main
+* Output: It showed what was in the home/main which was the folder `lecture1`. No arguments here showed us what files/folders were in the current directory.
+* Error?: No error was thrown as the output was as expected.
+
+_cat no arguement_
+* Working directory: Home/main
+* Output: There was no output, as there are no files to concatenate/print in the current directory. No arguments here threw the console into a spin, had to abort it using `Control + C`.
+* Error?: The command threw the terminal into a spin, and had to abort using `Control + C`. It was trying to concatenate something that it couldn't.
+
+
 
 **Step 2:**
 ![image](https://github.com/W6zhu/cse15l-lab-reports/assets/146861759/62e83d16-25c3-4c82-b865-c7eeeb1ad9a3)
