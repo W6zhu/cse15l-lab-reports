@@ -20,9 +20,13 @@ _cat no arguement_
 * Error?: The command threw the terminal into a spin, and had to abort using `Control + C`. It was trying to concatenate something that it couldn't.
 
 
-
 **Step 2:**
 ![image](https://github.com/W6zhu/cse15l-lab-reports/assets/146861759/62e83d16-25c3-4c82-b865-c7eeeb1ad9a3)
+
+_cd directory arguement_
+* Working directory: Home/main
+* Output: Got as expected for CD as it's used for changing directory and we didn't change the directory. Having no arguments means that nothing is being changed here.
+* Error?: The output was not an error as we did not change the directory.
 
 **Step 3:**
 ![image](https://github.com/W6zhu/cse15l-lab-reports/assets/146861759/fed27f36-4d42-45c2-afce-d50d8a3f6431)
