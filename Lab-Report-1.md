@@ -30,7 +30,7 @@ _cat no arguement_
 
 _cd directory arguement_
 * Working directory: `/home`
-* Output: Got as expected for output, as it took me to the directory I specified, in this case, lecture1. Having a directory argument changed my directory to the one specified. 
+* Output: Got as expected for output, as it took me to the directory I specified, in this case, `lecture1`. Having a directory argument changed my directory to the one specified. 
 * Error?: The output was not an error as it changed the directory properly.
 
 _ls directory arguement_
