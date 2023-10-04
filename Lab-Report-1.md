@@ -12,7 +12,7 @@ _cd no arguement_
 
 _ls no arguement_
 * Working directory: `/home`
-* Output: It showed what was in the home/main which was the folder `lecture1` as expected for the list function. No arguments here showed us what files/folders were in the current directory.
+* Output: It showed what was in the `/home` which was the folder `lecture1` as expected for the list function. No arguments here showed us what files/folders were in the current directory.
 * Error?: No error was thrown as the output was as expected.
 
 
