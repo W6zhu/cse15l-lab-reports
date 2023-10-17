@@ -4,14 +4,14 @@
 **Part 1**
 
 **Part 2**<br>
-_Path to private key_
+_Path to private key_<br>
 ![image](https://github.com/W6zhu/cse15l-lab-reports/assets/146861759/90d2387b-a6a7-4bb7-8318-936d4e5c45f5)
 ![image](https://github.com/W6zhu/cse15l-lab-reports/assets/146861759/b6ef070a-6019-454c-8931-17d447869289)
 
 The path to the private key is located in `/c/Users/Wilson Zhu/.ssh/id_rsa`. <br>
 Note: The private key is hidden in the picture on purpose.
 
-_Path to public key_
+_Path to public key_<br>
 ![image](https://github.com/W6zhu/cse15l-lab-reports/assets/146861759/10fea80a-e29c-4999-a2a7-cc817d6c5e7f)
 The path to the public key is located in `/c/Users/Wilson Zhu/.ssh/id_rsa.pub`.
 
