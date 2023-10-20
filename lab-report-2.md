@@ -32,7 +32,7 @@ Note: The private key is hidden in the picture on purpose for security and priva
 _Path to public key_<br>
 ![image](https://github.com/W6zhu/cse15l-lab-reports/assets/146861759/10fea80a-e29c-4999-a2a7-cc817d6c5e7f)
 The path to the public key is located in `/c/Users/Wilson Zhu/.ssh/id_rsa.pub`. <br>
-Note: The `cd authorized_keys` was accidental. `cd authorized_keys` shouldn't have worked as `authorized_keys` was a file and not a directory.
+Note: The terminal command `cd authorized_keys` was accidental. `cd authorized_keys` shouldn't have worked as `authorized_keys` was a file and not a directory.
 
 _Logging into ieng6 without my password_
 ![image](https://github.com/W6zhu/cse15l-lab-reports/assets/146861759/3c762179-b5f4-4b10-82a6-2db4a3d9d757)
