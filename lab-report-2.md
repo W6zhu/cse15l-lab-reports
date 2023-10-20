@@ -2,6 +2,24 @@
 **By: Wilson Zhu**
 
 **Part 1**<br>
+`StringServer` Code:<br>
+![image](https://github.com/W6zhu/cse15l-lab-reports/assets/146861759/32e2deaf-1356-4ea9-a75e-de833a6d3c56)
+
+`/add-message` with input `raccoon`:
+![image](https://github.com/W6zhu/cse15l-lab-reports/assets/146861759/644410e9-de18-4c15-82a3-be91062e06d6) <br>
+Methods: The method that was called would be `handleRequest.` as `/add-message?s=raccoon` is a valid input for this method. <br>
+Relevant arguments/fields: The relevant arguments would be the line `if (url.getPath().contains("/add-message"))` as it checks for `/add-message` otherwise it would return `404 not Found!`. The values of any relevant fields were `raccoon` when it got passed into the `ArrayList<String> strngs` field and `1. raccoon\n` when it got passed into `String out1` field. <br> 
+Change to the relevant field: `strngs` which was originally empty, now contains one element `raccoon`. `out1` which was originally an empty string, and cleared now reads `1. raccoon\n`. The `\n` in this case would make a new line. <br>
+
+
+`/add-message` with input `sleep deprived raccoon`:
+![image](https://github.com/W6zhu/cse15l-lab-reports/assets/146861759/dccec8fc-19bb-48dd-b3c2-1ee2adf96dc2) <br>
+
+Methods: The method that was called would be `handleRequest.` as `/add-message?s=sleep%20deprived%20raccoon` is a valid input for this method. The `%20` in the input indicates a space between words. <br>
+Relevant arguments/fields: The relevant arguments would be the line `if (url.getPath().contains("/add-message"))` as it checks for `/add-message` otherwise it would return `404 not Found!`. The values of any relevant fields were `sleep%20deprived%20raccoon` when it got passed into the `ArrayList<String> strngs` field and `2. sleep deprived raccoon\n` when it got passed into `String out1` field. <br> 
+Change to the relevant field: `strngs` which originally contained the element `raccoon`, now contains an additional element `sleep deprived raccoon`. `out1` which originally contained the string `1. raccoon\n` is now cleared and reads `2. sleep deprived raccoon\n`. The `\n` in this case would make a new line.<br>
+
+
 
 **Part 2**<br>
 _Path to private key_<br>
