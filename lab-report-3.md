@@ -150,7 +150,7 @@ ChatGPT: Part of the information gathered for this prompt was sourced from ChatG
   If you have the `[-auto]` option enabled, you don't need to use --color explicitly. The color highlighting will be applied automatically when you run the `grep` command without any additional options.
   
   The specific colors used for highlighting may depend on your terminal settings and can vary from one system to another. It's a helpful feature for quickly identifying matched text in the output, especially when dealing with large amounts of data or log files.
-  ```
+```
 - Outcome: Using the information provided by ChatGPT, I was able to conclude that I don't need the `[=auto]` part in my command and was able to gain a better understanding of the purpose of the `--color` command. <br>
 
 `-m NUM`:
@@ -180,14 +180,14 @@ ChatGPT: Part of the information gathered for this prompt was sourced from ChatG
 **Bad formatting here**
 - Output:<br>
 ```
-The `grep` option `-m` is used to limit the number of matching lines that `grep` will output. When you use `grep -m N`, where N is a number, `grep` will stop searching after it has found and displayed N matching lines. This is particularly useful when you only want to see a limited number of matches from a large file without processing the entire file.
-
-For example, if you have a file named `data.txt` and you want to find the first two lines that contain the word "example," you can use:
-
-bash
-grep -m 2 "example" data.txt
-
-In this case, `grep` will stop searching for matches in `data.txt` after it has found and displayed the first two lines that contain "example." This is helpful when you're dealing with large log files or other types of data, and you only want to see the initial occurrences of a specific pattern without processing the entire file.
+  The `grep` option `-m` is used to limit the number of matching lines that `grep` will output. When you use `grep -m N`, where N is a number, `grep` will stop searching after it has found and displayed N matching lines. This is particularly useful when you only want to see a limited number of matches from a large file without processing the entire file.
+  
+  For example, if you have a file named `data.txt` and you want to find the first two lines that contain the word "example," you can use:
+  
+  bash
+  grep -m 2 "example" data.txt
+  
+  In this case, `grep` will stop searching for matches in `data.txt` after it has found and displayed the first two lines that contain "example." This is helpful when you're dealing with large log files or other types of data, and you only want to see the initial occurrences of a specific pattern without processing the entire file.
 ```
 
 - Outcome: Using the information provided by ChatGPT, I was able to gain a better understanding surrounding the command `-m NUM`, which outputs the first `NUM` amount of lines containing the specified phrase following it. <br>
@@ -209,21 +209,21 @@ grep -n "bomb" technical/911report/chapter-2.txt
 ```
 - Output: <br>
 ```
-42:                Islam, and celebrated recent suicide bombings of American military facilities in the
-43:                Kingdom. It praised the 1983 suicide bombing in Beirut that killed 241 U.S. Marines,
-44:                the 1992 bombing in Aden, and especially the 1993 firefight in Somalia after which
-365:                November 24, 1989, when a remotely controlled car bomb killed Azzam and both of his
-506:                fatwa demanding their eviction. In December, bombs exploded at two hotels in Aden
-522:            In November 1995, a car bomb exploded outside a Saudi-U.S. joint facility in Riyadh
-531:            In June 1996, an enormous truck bomb detonated in the Khobar Towers residential
-540:                cloudy are the 1993 bombing of the World Trade Center, a plot that same year to
-572:                particular interest in learning how to use truck bombs such as the one that had
-862:                embassy in Nairobi was an easy target because a car bomb could be parked close by,
-900:                Members of the cells rented residences, and purchased bomb-making materials and
-919:                bombs, and acquired the delivery vehicles. On August 4, they made one last casing
-930:            On the morning of August 7, the bomb-laden trucks drove into the embassies roughly
-941:                permissible under Islam." Asked if he had indeed masterminded these bombings, Bin
-```
+  42:                Islam, and celebrated recent suicide bombings of American military facilities in the
+  43:                Kingdom. It praised the 1983 suicide bombing in Beirut that killed 241 U.S. Marines,
+  44:                the 1992 bombing in Aden, and especially the 1993 firefight in Somalia after which
+  365:                November 24, 1989, when a remotely controlled car bomb killed Azzam and both of his
+  506:                fatwa demanding their eviction. In December, bombs exploded at two hotels in Aden
+  522:            In November 1995, a car bomb exploded outside a Saudi-U.S. joint facility in Riyadh
+  531:            In June 1996, an enormous truck bomb detonated in the Khobar Towers residential
+  540:                cloudy are the 1993 bombing of the World Trade Center, a plot that same year to
+  572:                particular interest in learning how to use truck bombs such as the one that had
+  862:                embassy in Nairobi was an easy target because a car bomb could be parked close by,
+  900:                Members of the cells rented residences, and purchased bomb-making materials and
+  919:                bombs, and acquired the delivery vehicles. On August 4, they made one last casing
+  930:            On the morning of August 7, the bomb-laden trucks drove into the embassies roughly
+  941:                permissible under Islam." Asked if he had indeed masterminded these bombings, Bin
+  ```
 
 - Purpose: The purpose of the `-n` command is to parse through a specific text, outputting any lines matching the specified phrase and the line number it is located in. This command is particularly useful if we want to find a certain phrase in a text and locate where it is located in the text especially long files. <br>
 
