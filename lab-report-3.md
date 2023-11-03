@@ -131,7 +131,7 @@ Note: The output of this example is an image as the color is command-line specif
 ChatGPT: Part of the information gathered for this prompt was sourced from ChatGPT. <br>
 - Input: `Can you explain to me what "--color [-auto]" does to a file?` <br>
 - Output: <br>
-
+<br>
 ```
 The `--color` option in various Unix/Linux commands, including `grep`, is used to highlight or colorize the matching text in the output. When you use `--color`, the matched text is displayed in a different color to make it stand out, making it easier to identify matches in the output.
 
@@ -152,7 +152,7 @@ If you have the `[-auto]` option enabled, you don't need to use --color explicit
 
 The specific colors used for highlighting may depend on your terminal settings and can vary from one system to another. It's a helpful feature for quickly identifying matched text in the output, especially when dealing with large amounts of data or log files.
 ```
-
+<br>
 - Outcome: Using the information provided by ChatGPT, I was able to conclude that I don't need the `[=auto]` part in my command and was able to gain a better understanding of the purpose of the `--color` command. <br>
 
 `-m NUM`:
