@@ -143,6 +143,9 @@ The `--color` option is often followed by an optional argument, `[-auto]`. Here'
 
 Here's an example of how you might use `grep` with `--color` to search for a pattern in a file and have the matching text highlighted:
 
+bash
+grep --color "search_pattern" file.txt
+
 In this command, the matched text that contains "search_pattern" will be displayed in a different color to make it stand out in the output.
 
 If you have the `[-auto]` option enabled, you don't need to use --color explicitly. The color highlighting will be applied automatically when you run the `grep` command without any additional options.
