@@ -124,8 +124,8 @@ The `--color` option is often followed by an optional argument, `[-auto]`. Here'
 2. `[-auto]`: This is an optional argument that can be used with `--color`. If you include `[-auto]`, it means that the color highlighting is applied automatically without the need for additional options. In other words, it enables color highlighting by default, so you don't have to explicitly use `--color` each time you run the command.
 
 Here's an example of how you might use `grep` with `--color` to search for a pattern in a file and have the matching text highlighted:
-
 ```
+<br>
 ![image](https://github.com/W6zhu/cse15l-lab-reports/assets/146861759/d1e33ca5-4dec-4b5d-9404-cada586529e9)
 
 ```
@@ -169,14 +169,10 @@ ChatGPT: Part of the information gathered for this prompt was sourced from ChatG
 The `grep` option `-m` is used to limit the number of matching lines that `grep` will output. When you use `grep -m N`, where N is a number, `grep` will stop searching after it has found and displayed N matching lines. This is particularly useful when you only want to see a limited number of matches from a large file without processing the entire file.
 
 For example, if you have a file named `data.txt` and you want to find the first two lines that contain the word "example," you can use:
-```
 
-```
 bash
 grep -m 2 "example" data.txt
-```
 
-```
 In this case, `grep` will stop searching for matches in `data.txt` after it has found and displayed the first two lines that contain "example." This is helpful when you're dealing with large log files or other types of data, and you only want to see the initial occurrences of a specific pattern without processing the entire file.
 ```
 - Outcome: Using the information provided by ChatGPT, I was able to gain a better understanding surrounding the command `-m NUM`, which outputs the first `NUM` amount of lines containing the specified phrase following it. 
