@@ -132,25 +132,25 @@ ChatGPT: Part of the information gathered for this prompt was sourced from ChatG
 - Input: `Can you explain to me what "--color [-auto]" does to a file?` <br>
 - Output:<br>
 ```
-The `--color` option in various Unix/Linux commands, including `grep`, is used to highlight or colorize the matching text in the output. When you use `--color`, the matched text is displayed in a different color to make it stand out, making it easier to identify matches in the output.
-
-The `--color` option is often followed by an optional argument, `[-auto]`. Here's what they mean:
-
-1. `--color`: This option enables color highlighting for the matching text in the output. When you use `--color`, the matched text is displayed in a different color, making it more visible.
-
-2. `[-auto]`: This is an optional argument that can be used with `--color`. If you include `[-auto]`, it means that the color highlighting is applied automatically without the need for additional options. In other words, it enables color highlighting by default, so you don't have to explicitly use `--color` each time you run the command.
-
-Here's an example of how you might use `grep` with `--color` to search for a pattern in a file and have the matching text highlighted:
-
-bash
-grep --color "search_pattern" file.txt
-
-In this command, the matched text that contains "search_pattern" will be displayed in a different color to make it stand out in the output.
-
-If you have the `[-auto]` option enabled, you don't need to use --color explicitly. The color highlighting will be applied automatically when you run the `grep` command without any additional options.
-
-The specific colors used for highlighting may depend on your terminal settings and can vary from one system to another. It's a helpful feature for quickly identifying matched text in the output, especially when dealing with large amounts of data or log files.
-```
+  The `--color` option in various Unix/Linux commands, including `grep`, is used to highlight or colorize the matching text in the output. When you use `--color`, the matched text is displayed in a different color to make it stand out, making it easier to identify matches in the output.
+  
+  The `--color` option is often followed by an optional argument, `[-auto]`. Here's what they mean:
+  
+  1. `--color`: This option enables color highlighting for the matching text in the output. When you use `--color`, the matched text is displayed in a different color, making it more visible.
+  
+  2. `[-auto]`: This is an optional argument that can be used with `--color`. If you include `[-auto]`, it means that the color highlighting is applied automatically without the need for additional options. In other words, it enables color highlighting by default, so you don't have to explicitly use `--color` each time you run the command.
+  
+  Here's an example of how you might use `grep` with `--color` to search for a pattern in a file and have the matching text highlighted:
+  
+  bash
+  grep --color "search_pattern" file.txt
+  
+  In this command, the matched text that contains "search_pattern" will be displayed in a different color to make it stand out in the output.
+  
+  If you have the `[-auto]` option enabled, you don't need to use --color explicitly. The color highlighting will be applied automatically when you run the `grep` command without any additional options.
+  
+  The specific colors used for highlighting may depend on your terminal settings and can vary from one system to another. It's a helpful feature for quickly identifying matched text in the output, especially when dealing with large amounts of data or log files.
+  ```
 - Outcome: Using the information provided by ChatGPT, I was able to conclude that I don't need the `[=auto]` part in my command and was able to gain a better understanding of the purpose of the `--color` command. <br>
 
 `-m NUM`:
