@@ -130,7 +130,7 @@ Note: The output of this example is an image as the color is command-line specif
 
 ChatGPT: Part of the information gathered for this prompt was sourced from ChatGPT. <br>
 - Input: `Can you explain to me what "--color [-auto]" does to a file?` <br>
-- Output: 
+- Output: <br>
 ```
 The `--color` option in various Unix/Linux commands, including `grep`, is used to highlight or colorize the matching text in the output. When you use `--color`, the matched text is displayed in a different color to make it stand out, making it easier to identify matches in the output.
 
@@ -155,7 +155,7 @@ The specific colors used for highlighting may depend on your terminal settings a
 - Outcome: Using the information provided by ChatGPT, I was able to conclude that I don't need the `[=auto]` part in my command and was able to gain a better understanding of the purpose of the `--color` command. <br>
 
 `-m NUM`:
-Where `NUM` is the number of lines to output. 
+Where `NUM` is the number of lines to output. <br>
 `grep -m NUM` used in a directory: <br>
 ```
 grep -m 2 "flights" technical/911report
@@ -165,7 +165,7 @@ grep -m 2 "flights" technical/911report
 ```
 grep: technical/911report: Is a directory
 ```
-Note: The `-m NUM` command does not work on directories but rather on files as it searches files matching a phrase and outputs the first 2 lines containing the input `flights`.
+Note: The `-m NUM` command does not work on directories but rather on files as it searches files matching a phrase and outputs the first 2 lines containing the input `flights`. <br>
 
 `grep -m NUM` used in a file: <br>
 ```
