@@ -175,9 +175,7 @@ grep -m 2 "flights" technical/911report/chapter-1.txt
     The 19 men were aboard four transcontinental flights.
     The hijackers attacked sometime between 8:42 and 8:46. They used knives (as reported by two passengers and a flight attendant), Mace (reported by one passenger), and the threat of a bomb (reported by the same passenger). They stabbed members of the flight crew (reported by a flight attendant and one passenger). Both pilots had been killed (reported by one flight attendant). The eyewitness accounts came from calls made from the rear of the plane, from passengers originally seated further forward in the cabin, a sign that passengers and perhaps crew had been moved to the back of the aircraft. Given similarities to American 11 in hijacker seating and in eyewitness reports of tactics and weapons, as well as the contact between the presumed team leaders, Atta and Shehhi, we believe the tactics were similar on both flights.
 ```
-
 - Purpose: The purpose of the `-m NUM` command is to parse through a specific text, outputting the first `NUM` amount of lines containing the specified phrase. This command is useful as sometimes you may only want a certain amount of matches from the top.<br>
-
 ChatGPT: Part of the information gathered for this prompt was sourced from ChatGPT. <br>
 - Input: `What does grep -m NUM do?` <br>
 - Output:  <br>
