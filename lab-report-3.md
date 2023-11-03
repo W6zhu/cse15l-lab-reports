@@ -158,7 +158,6 @@ Where `NUM` is the number of lines to output. <br>
 `grep -m NUM` used in a directory: <br>
 ```
 grep -m 2 "flights" technical/911report
-
 ```
 - Output: <br>
 ```
