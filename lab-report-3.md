@@ -125,7 +125,7 @@ The `--color` option is often followed by an optional argument, `[-auto]`. Here'
 
 Here's an example of how you might use `grep` with `--color` to search for a pattern in a file and have the matching text highlighted:
 ```
-<br>
+
 ![image](https://github.com/W6zhu/cse15l-lab-reports/assets/146861759/d1e33ca5-4dec-4b5d-9404-cada586529e9)
 
 ```
@@ -160,11 +160,11 @@ grep -m 2 "flights" technical/911report/chapter-1.txt
     The hijackers attacked sometime between 8:42 and 8:46. They used knives (as reported by two passengers and a flight attendant), Mace (reported by one passenger), and the threat of a bomb (reported by the same passenger). They stabbed members of the flight crew (reported by a flight attendant and one passenger). Both pilots had been killed (reported by one flight attendant). The eyewitness accounts came from calls made from the rear of the plane, from passengers originally seated further forward in the cabin, a sign that passengers and perhaps crew had been moved to the back of the aircraft. Given similarities to American 11 in hijacker seating and in eyewitness reports of tactics and weapons, as well as the contact between the presumed team leaders, Atta and Shehhi, we believe the tactics were similar on both flights.
 ```
 
-- Purpose: The purpose of the `-m NUM` command is to parse through a specific text, outputting the first `NUM` amount of lines containing the specified phrase.
+- Purpose: The purpose of the `-m NUM` command is to parse through a specific text, outputting the first `NUM` amount of lines containing the specified phrase. This command is useful as sometimes you may only want a certain amount of matches from the top.<br>
 
 ChatGPT: Part of the information gathered for this prompt was sourced from ChatGPT. <br>
 - Input: `What does grep -m NUM do?` <br>
-- Output: 
+- Output:  <br>
 ```
 The `grep` option `-m` is used to limit the number of matching lines that `grep` will output. When you use `grep -m N`, where N is a number, `grep` will stop searching after it has found and displayed N matching lines. This is particularly useful when you only want to see a limited number of matches from a large file without processing the entire file.
 
@@ -175,8 +175,42 @@ grep -m 2 "example" data.txt
 
 In this case, `grep` will stop searching for matches in `data.txt` after it has found and displayed the first two lines that contain "example." This is helpful when you're dealing with large log files or other types of data, and you only want to see the initial occurrences of a specific pattern without processing the entire file.
 ```
-- Outcome: Using the information provided by ChatGPT, I was able to gain a better understanding surrounding the command `-m NUM`, which outputs the first `NUM` amount of lines containing the specified phrase following it. 
+- Outcome: Using the information provided by ChatGPT, I was able to gain a better understanding surrounding the command `-m NUM`, which outputs the first `NUM` amount of lines containing the specified phrase following it. <br>
 
+`-n`:
+`grep -n` used in a directory: <br>
+```
+grep -n "bomb" technical/911report
+
+```
+- Output: <br>
+```
+grep: technical/911report: Is a directory
+```
+Note: The `-n` command does not work on directories but rather on files as it searches files matching a phrase and outputs its line and the line number where its located. 
+`grep -n` used in a file: <br>
+```
+grep -n "bomb" technical/911report/chapter-2.txt
+```
+- Output: <br>
+```
+42:                Islam, and celebrated recent suicide bombings of American military facilities in the
+43:                Kingdom. It praised the 1983 suicide bombing in Beirut that killed 241 U.S. Marines,
+44:                the 1992 bombing in Aden, and especially the 1993 firefight in Somalia after which
+365:                November 24, 1989, when a remotely controlled car bomb killed Azzam and both of his
+506:                fatwa demanding their eviction. In December, bombs exploded at two hotels in Aden
+522:            In November 1995, a car bomb exploded outside a Saudi-U.S. joint facility in Riyadh
+531:            In June 1996, an enormous truck bomb detonated in the Khobar Towers residential
+540:                cloudy are the 1993 bombing of the World Trade Center, a plot that same year to
+572:                particular interest in learning how to use truck bombs such as the one that had
+862:                embassy in Nairobi was an easy target because a car bomb could be parked close by,
+900:                Members of the cells rented residences, and purchased bomb-making materials and
+919:                bombs, and acquired the delivery vehicles. On August 4, they made one last casing
+930:            On the morning of August 7, the bomb-laden trucks drove into the embassies roughly
+941:                permissible under Islam." Asked if he had indeed masterminded these bombings, Bin
+```
+
+- Purpose: The purpose of the `-n` command is to parse through a specific text, outputting any lines matching the specified phrase and the line number it is located in. This command is particularly useful if we want to find a certain phrase in a text and locate where it is located in the text especially long files. <br>
 
 
 
