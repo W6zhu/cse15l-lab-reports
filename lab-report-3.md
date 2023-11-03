@@ -73,8 +73,26 @@ Code after fix: <br>
     return sum / (arr.length - 1);
   }
 ```
-The fix addressed the issue of the code truncating all of lowest numbers rather than one instance of the lowest number. In my case, if the input was `2,2,4,4,5`, it would truncate both 2's rather than just one. The fix I've implemented would send all inputs to an array and then it will compare all elements of the array, searching for the index containing the lowest number. This way, only 1 of the lowest is truncated and the other is kept. 
+The fix addressed the issue of the code truncating all of the lowest numbers rather than one instance of the lowest number. In my case, if the input was `2,2,4,4,5`, it would truncate both 2's rather than just one. The fix I've implemented would send all inputs to an array and then it will compare all elements of the array, searching for the index containing the lowest number. This way, only 1 of the lowest is truncated and the other is kept. <br>
+
+**Part 2:** <br>
+
+Researching the `grep` command. <br>
+
+Options: `-f`, `--color [=WHEN]`, `-m NUM`, `-n`.
+
+`-f`:
+`grep -f` used in a directory: <br>
+```
+$ grep -f technical/911report/
+grep: technical/911report/: Is a directory
+```
+`grep -f` used in a file: <br>
+**COME BACK TO THIS**
+
+`--color [=WHEN]`:
+Using the color blue and `always` for `WHEN` 
 
 
-read week 5
-extremely sleep deprived
+Source: Googled `grep command line options` and clicked the link that lead me to `grep(1) - Linux manual page` which provided the following URL: https://man7.org/linux/man-pages/man1/grep.1.html.
+
