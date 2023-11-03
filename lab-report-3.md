@@ -79,16 +79,33 @@ The fix addressed the issue of the code truncating all of the lowest numbers rat
 
 Researching the `grep` command. <br>
 
-Options: `-f`, `--color`, `-m NUM`, `-n`.
+Options: `-o`, `--color`, `-m NUM`, `-n`.
 
-`-f`:
-`grep -f` used in a directory: <br>
+`-o`:
+`grep -o` used in a directory: <br>
 ```
-grep -f technical/911report/
+grep -o "FBI agent" technical/911report/
+```
+- Output: <br>
+```
 grep: technical/911report/: Is a directory
 ```
-`grep -f` used in a file: <br>
-**COME BACK TO THIS**
+Note: The `--o` command does not work on directories but rather on files as it searches files matching a phrase and outputs the phrase every time it occurs.  <br>
+`grep -o` used in a file: <br>
+```
+grep -o "FBI agent" technical/911report/chapter-3.txt
+```
+- Output: <br>
+```
+FBI agent
+FBI agent
+FBI agent
+FBI agent
+FBI agent
+FBI agent
+FBI agent
+```
+- Purpose: The purpose of the `-o` command is to parse through a specific text, outputting anything that matches a specific phrase. This is particularly helpful if you want to see how many times a certain phrase shows up in a file. <br>
 
 `--color`:
 Using `--color` on a directory: <br>
@@ -99,7 +116,7 @@ grep --color technical/911report/
 ```
 grep: technical/911report/: Is a directory
 ```
-Note: The `-color` command does not work on directories but rather on files as it searches files matching a phrase and outputs it in a different color. 
+Note: The `-color` command does not work on directories but rather on files as it searches files matching a phrase and outputs it in a different color.  <br>
 Using `--color` on a file: <br>
 ```
 grep --color "planes" technical/911report/chapter-7.txt
