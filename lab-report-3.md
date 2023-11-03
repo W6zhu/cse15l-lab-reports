@@ -130,7 +130,7 @@ Note: The output of this example is an image as the color is command-line specif
 
 ChatGPT: Part of the information gathered for this prompt was sourced from ChatGPT. <br>
 - Input: `Can you explain to me what "--color [-auto]" does to a file?` <br>
-- Output: <br>
+- Output:<br>
 ```
 The `--color` option in various Unix/Linux commands, including `grep`, is used to highlight or colorize the matching text in the output. When you use `--color`, the matched text is displayed in a different color to make it stand out, making it easier to identify matches in the output.
 
@@ -177,7 +177,8 @@ grep -m 2 "flights" technical/911report/chapter-1.txt
 - Purpose: The purpose of the `-m NUM` command is to parse through a specific text, outputting the first `NUM` amount of lines containing the specified phrase. This command is useful as sometimes you may only want a certain amount of matches from the top.<br>
 ChatGPT: Part of the information gathered for this prompt was sourced from ChatGPT. <br>
 - Input: `What does grep -m NUM do?` <br>
-- Output:  <br>
+**Bad formatting here**
+- Output:<br>
 ```
 The `grep` option `-m` is used to limit the number of matching lines that `grep` will output. When you use `grep -m N`, where N is a number, `grep` will stop searching after it has found and displayed N matching lines. This is particularly useful when you only want to see a limited number of matches from a large file without processing the entire file.
 
