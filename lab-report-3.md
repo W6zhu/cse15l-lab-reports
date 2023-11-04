@@ -117,7 +117,7 @@ grep --color technical/911report/
 ```
 grep: technical/911report/: Is a directory
 ```
-Note: The `-color` command does not work on directories but rather on files as it searches files matching a phrase and outputs it in a different color.  <br>
+Note: The `--color` command does not work on directories but rather on files as it searches files matching a phrase and outputs it in a different color.  <br>
 
 Using `--color` on a file: <br>
 ```
