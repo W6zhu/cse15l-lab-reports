@@ -155,7 +155,7 @@ ChatGPT: Part of the information gathered for this prompt was sourced from ChatG
 ```
 - Outcome: Using the information provided by ChatGPT, I was able to conclude that I don't need the `[=auto]` part in my command and was able to gain a better understanding of the purpose of the `--color` command. <br>
 
-`-m NUM`:
+`-m NUM`: <br>
 Where `NUM` is the number of lines to output. <br>
 `grep -m NUM` used in a directory: <br>
 ```
@@ -197,7 +197,6 @@ ChatGPT: Part of the information gathered for this prompt was sourced from ChatG
 `grep -n` used in a directory: <br>
 ```
 grep -n "bomb" technical/911report
-
 ```
 - Output: <br>
 ```
@@ -230,5 +229,5 @@ grep -n "bomb" technical/911report/chapter-2.txt
 
 
 
-Source: Googled `grep command line options` and clicked the link that led me to `grep(1) - Linux manual page` which provided the following URL: https://man7.org/linux/man-pages/man1/grep.1.html.
+Source: Googled `grep command line options` and clicked the link that led me to `grep(1) - Linux manual page` which provided the following URL: <https://man7.org/linux/man-pages/man1/grep.1.html.>
 
