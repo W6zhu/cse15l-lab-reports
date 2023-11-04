@@ -22,7 +22,7 @@ No Failure: <br>
 JUnit output: <br>
 ![image](https://github.com/W6zhu/cse15l-lab-reports/assets/146861759/f5542fb1-ce13-4f5c-924f-e60ef909301f)
 
-Code before fix: <br>
+Chunk of code before fix: <br>
 
 ```
   static double averageWithoutLowest(double[] arr) {
@@ -47,7 +47,7 @@ Code before fix: <br>
   }
 ``` 
 
-Code after fix: <br>
+Chunk of code after fix: <br>
 ```
  static double averageWithoutLowest(double[] arr) {
     if(arr.length < 2) { 
@@ -73,7 +73,7 @@ Code after fix: <br>
     return sum / (arr.length - 1);
   }
 ```
-The fix addressed the issue of the code truncating all of the lowest numbers rather than one instance of the lowest number. In my case, if the input was `2,2,4,4,5`, it would truncate both 2's rather than just one. The fix I've implemented would send all inputs to an array and then it will compare all elements of the array, searching for the index containing the lowest number. This way, only 1 of the lowest is truncated and the other is kept. <br>
+The fix addressed the issue of the code removing all of the lowest numbers rather than one instance of the lowest number. In my case, if the input was `2,2,4,4,5`, it would remove both 2's rather than just one. The fix I've implemented would send all inputs to an array and then it will compare all elements of the array, searching for the index containing the lowest number. This way, only 1 of the lowest is removed and the other is kept. <br>
 
 **Part 2:** <br>
 
@@ -91,6 +91,7 @@ grep -o "FBI agent" technical/911report/
 grep: technical/911report/: Is a directory
 ```
 Note: The `--o` command does not work on directories but rather on files as it searches files matching a phrase and outputs the phrase every time it occurs.  <br>
+
 `grep -o` used in a file: <br>
 ```
 grep -o "FBI agent" technical/911report/chapter-3.txt
@@ -117,6 +118,7 @@ grep --color technical/911report/
 grep: technical/911report/: Is a directory
 ```
 Note: The `-color` command does not work on directories but rather on files as it searches files matching a phrase and outputs it in a different color.  <br>
+
 Using `--color` on a file: <br>
 ```
 grep --color "planes" technical/911report/chapter-7.txt
@@ -177,7 +179,6 @@ grep -m 2 "flights" technical/911report/chapter-1.txt
 - Purpose: The purpose of the `-m NUM` command is to parse through a specific text, outputting the first `NUM` amount of lines containing the specified phrase. This command is useful as sometimes you may only want a certain amount of matches from the top.<br>
 ChatGPT: Part of the information gathered for this prompt was sourced from ChatGPT. <br>
 - Input: `What does grep -m NUM do?` <br>
-**Bad formatting here**
 - Output:<br>
 ```
   The `grep` option `-m` is used to limit the number of matching lines that `grep` will output. When you use `grep -m N`, where N is a number, `grep` will stop searching after it has found and displayed N matching lines. This is particularly useful when you only want to see a limited number of matches from a large file without processing the entire file.
