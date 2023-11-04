@@ -90,7 +90,7 @@ grep -o "FBI agent" technical/911report/
 ```
 grep: technical/911report/: Is a directory
 ```
-Note: The `--o` command does not work on directories but rather on files as it searches files matching a phrase and outputs the phrase every time it occurs.  <br>
+Note: The `-o` command does not work on directories but rather on files as it searches files matching a phrase and outputs the phrase every time it occurs.  <br>
 
 `grep -o` used in a file: <br>
 ```
@@ -229,5 +229,5 @@ grep -n "bomb" technical/911report/chapter-2.txt
 
 
 
-Source: Googled `grep command line options` and clicked the link that led me to `grep(1) - Linux manual page` which provided the following URL: <https://man7.org/linux/man-pages/man1/grep.1.html.>
+Source for all options : Googled `grep command line options` and clicked the link that led me to `grep(1) - Linux manual page` which provided the following URL: <https://man7.org/linux/man-pages/man1/grep.1.html.>
 
