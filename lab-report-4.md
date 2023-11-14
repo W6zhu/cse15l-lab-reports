@@ -1,5 +1,5 @@
 # Lab Report 4
-**By: Wilson Zhu** <br.
+**By: Wilson Zhu** <br>
 
 Logging in:<br>
 Typing `ssh cs15lfa23iw@ieng6.ucsd.edu` <br>
@@ -10,7 +10,7 @@ Typing `git clone git@github.com:W6zhu/lab7.git` <br>
 ![image](https://github.com/W6zhu/cse15l-lab-reports/assets/146861759/39066174-504d-467e-b57f-f80262c57ac9)<br>
 
 Running the tests and they fail:<br>
-Typing: `cd lab7` then `bash test.sh`<br>
+Typing: `cd lab7` (not shown) then `bash test.sh`<br>
 ![image](https://github.com/W6zhu/cse15l-lab-reports/assets/146861759/ab4521af-2812-4127-a34a-520f787f019a)<br>
 
 Editing code to fix failure:<br>
