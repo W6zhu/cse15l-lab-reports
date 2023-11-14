@@ -17,6 +17,7 @@ Editing code to fix failure:<br>
 Typing: `vim ListExamples.java` then `<shift+g> <k> (6 times) <shift+e> <x> <a> <2> <esc> <:wq>`<br>
 ![image](https://github.com/W6zhu/cse15l-lab-reports/assets/146861759/7f70c8f3-15ff-4c9b-a725-46a7d715c191)<br>
 ![image](https://github.com/W6zhu/cse15l-lab-reports/assets/146861759/6a26671f-aaac-4595-8915-4fe39a7a8528)<br>
+Note: The underlined 2 shows that the code was changed from `index1` to `index2`. <br>
 
 Running the test to show success:<br>
 Typing: `bash test.sh`<br>
