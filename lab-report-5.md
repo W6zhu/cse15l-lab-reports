@@ -15,14 +15,114 @@ Terminal: ![image](https://github.com/W6zhu/cse15l-lab-reports/assets/146861759/
 
 TA Response: <br>
 Hi, <br>
-Based on the output in your terminal it appears that your error may be at one of the `cp` lines. Based on this what information provides, what can we try to do to fix the bug? <br>
+Based on the output in your terminal it appears that your error may be at one of the `cp` lines and `lib` also appears to be omitted. Based on this what information provided, what can we try to do to fix the bug? <br>
 
 Student trying solution:
 
+Code: ![image](https://github.com/W6zhu/cse15l-lab-reports/assets/146861759/d7baaaa6-8eb5-46d3-8ae1-0a8b422e7892) <br>
+
+Terminal: ![image](https://github.com/W6zhu/cse15l-lab-reports/assets/146861759/e1fd0c59-f6b4-457a-a168-fde77add909c) <br>
+
+The bug that caused the program to throw such symptom would be the missing `-r` option used for copy. This option lets it recursively copy all files in the `lib` folder. Without all the files JUnit isn't running properly. <br>
+
+Setup Process: <br>
+Note: This bug was derived from the auto-grader repository that was worked on during the week 6 lab. <br>
+File and Directory structure needed: ![image](https://github.com/W6zhu/cse15l-lab-reports/assets/146861759/501865f5-4084-4182-bda8-3618786ae128)
+Content of each file: Each file remained the same as <https://github.com/ucsd-cse15l-s23/list-examples-grader>, except `grade.sh` as it has been modified. <br>
+Modified `grade.sh` before bug fix:
+```
+CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar'
+
+rm -rf student-submission
+rm -rf grading-area
+
+mkdir grading-area
+
+git clone $1 student-submission
+echo 'Finished cloning'
+
+cd student-submission
+
+
+if [[ -f ListExamples.java ]]
+then
+    cp -r ListExamples.java ../grading-area
+    cd ..
+
+    cp -r *.java grading-area
+
+    cd grading-area
+
+    cd .. 
+
+    cp lib grading-area
+    cd grading-area
+
+    javac -cp ".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar" *.java
+    java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore TestListExamples > run-results.txt
+
+else
+    echo 'resubmit with proper file'
+fi
 
 
 
+# Draw a picture/take notes on the directory structure that's set up after
+# getting to this point
 
+# Then, add here code to compile and run, and do any post-processing of the
+# tests
+
+```
+To trigger the bug, I simply removed the `-r` option from `cp -r lib grading-area` which caused the bug to trigger. The resulting line became `cp lib grading-area` <br>
+
+To fix this bug, the option `-r` was added to the code, allowing it to read recursively read and copy the contents of `lib` into `grading-area`.
+
+Modified code after bug fix:
+```
+CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar'
+
+rm -rf student-submission
+rm -rf grading-area
+
+mkdir grading-area
+
+git clone $1 student-submission
+echo 'Finished cloning'
+
+cd student-submission
+
+
+if [[ -f ListExamples.java ]]
+then
+    cp -r ListExamples.java ../grading-area
+    cd ..
+
+    cp -r *.java grading-area
+
+    cd grading-area
+
+    cd .. 
+
+    cp -r lib grading-area
+    cd grading-area
+
+    javac -cp ".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar" *.java
+    java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore TestListExamples > run-results.txt
+
+else
+    echo 'resubmit with proper file'
+fi
+
+
+
+# Draw a picture/take notes on the directory structure that's set up after
+# getting to this point
+
+# Then, add here code to compile and run, and do any post-processing of the
+# tests
+
+```
 
 
 
